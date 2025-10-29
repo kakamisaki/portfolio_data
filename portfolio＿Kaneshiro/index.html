@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEST portfolio</title>
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<section class="header">
+  <header class="site-header" id="top">
+
+ <button class="menu-toggle" aria-label="メニューを開く">☰</button>
+
+<nav class="menu-nav">
+  <ul>
+    <li><a href="#about">about</a></li>
+    <li><a href="#works">works</a></li>
+    <li><a href="#contact" class="top-contact">contact</a></li>
+  </ul>
+</nav>
+</header>
+</section>
+
+<!-- ここからトップ-->
+  <section class="world-map">
+    <img src="./imaages/AdobeStock_529411545.png" alt="世界地図の背景" class="map-image">
+    <div class="title">
+      <h1 class="main-title">出掛けよう、デザインの旅へ</h1>
+      <p class="subtitle">
+        デザインは旅のように、新しい景色や発想に出会いながら世界を広げていく体験です。<br>
+        私はその案内人として、新しい景色を共に発見し、感動を分かち合いたい。<br>
+        このポートフォリオは、その小さな一歩の記録であり、あなたと一緒に進む次の旅への招待状。 
+      </p>
+    </div>
+  </section>
+
+  <!-- ここからアバウト-->
+  <section class="about" id="about">
+    <div class="map-wrap">
+      <img src="./imaages/map_1.png" alt="地図１" class="map1">
+      <img src="./imaages/map_2.png" alt="地図２" class="map2">
+
+      <div class="overtext">
+        <h1 class="text3">-----旅とデザイン、そして私 ABOUT-------</h1>
+        <p class="text5">
+          はじめまして、新人webデザイナーです。<br>
+          新しい挑戦は旅のはじまりのようなもの。<br>
+          私にできる小さなサポートで、その一歩が少しでも軽やかになれば幸いです。
+        </p>
+        <a href="./about.html" class="morebtn" role="button">MORE</a>
+      </div>
+    </div>
+  </section>
+
+<section class="works" id="works">
+  <div class="works-overtext">
+    <h1 class="work-text">WORKS</h1>
+    <p class="work-text1">-------旅の記録-------</p>
+  </div>
+</section>
+
+<!-- スクリーン -->
+<section class="retro">
+  <div class="frame">
+    <div class="screen-wrap">
+      <!-- 仮の写真ー入れ替える -->
+      <div class="slides">
+         <img src="./imaages/uae_7.jpg" class="slide is-active">
+        <img src="./imaages/uae_8.jpg" class="slide">
+      </div>
+    </div>
+
+    <!-- 後でJSで使えるボタン-->
+    <div class="ctrl">
+      <button class="btn round prev" aria-label="前へ"></button>
+      <span class="btn pill" aria-hidden="true">WORK</span>
+      <button class="btn round next" aria-label="次へ"></button>
+    </div>
+  </div>
+</section>
+
+<!--犬の足跡-->
+
+
+<!-- ここからお問い合わせ-->
+<section class="contact" id="contact">
+  <div class="contact-title">
+  <h2>CONTACT</h2>
+  <p class="text10">お問い合わせ</p>
+  </div>
+  <form>
+    <label><span class="lbl">名前：</span><input type="text" name="yourname"></label>
+   <label><span class="lbl">メールアドレス：</span><input type="text" name="address"></label>
+   <label><span class="lbl">お問合せ内容：</span><input type="text" name="contact10"></label>
+    
+   <button type="submit">送信</button>
+  </form>
+</section>
+
+<!-- スキルの部分-->
+ 
+
+
+<!-- ここからフッター-->
+<section class="footer">
+<div class="footer-name">
+  <h1 class="footer-name1">MISAKI KANESHIRO</h1>
+  <p class="footer-sub">WEB DESIGNER PORTFORIO SITE</p>
+  </div>
+
+<div class="totop" >
+  <a href="#top">
+  <img src="./imaages/plane.png">
+  </a>
+</section>
+
+<div class="half-bg"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
