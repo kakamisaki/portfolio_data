@@ -7,49 +7,52 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
   <link rel="stylesheet" href="./css/style.css">
+
+  <script>
+  (function(d) {
+    var config = {
+      kitId: 'gjr6yqm',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
 </head>
 <body class="about-page">
-<section class="header" id="about.html">
-  <header class="site-header" id="top">
+  <section class="about-header" id="about.html">
+   <header class="site-header" id="top">
+    <button class="menu-toggle" aria-label="メニューを開く">☰</button>
 
- <button class="menu-toggle" aria-label="メニューを開く">☰</button>
-
-<nav class="menu-nav">
-  <ul>
-    <li><a href="#about">about</a></li>
-    <li><a href="#works">works</a></li>
-    <li><a href="#contact" class="top-contact">contact</a></li>
-  </ul>
-</nav>
+    <nav class="menu-nav">
+      <ul>
+       <li><a href="index.html#top">home</a></li>
+       <li><a href="index.html#contact" class="top-contact">contact</a></li>
+      </ul>
+    </nav>
 </header>
 </section>
+  
 
-   
-<section class="pics">
-<div class="all-pics">
-     <svg width="200" height="200" viewBox="0 0 200 200">
-  <path id="circle"
-        d="M100, 100
-           m-75,0
-           a75,75 0 1,1 150,0
-           a75,75 0 1,1 -150,0"
-        fill="none" />
-  <text>
-    <textPath xlink:href="#circle" startOffset="0%" fill="#0089A7">
-      WHO AM I WHO AM I WHO AM I WHO AM I WHO AM I WHO AM I
-    </textPath>
-  </text>
-</svg>
-    <img src="./imaages/flower.png" class="flower">
-    <img src="./imaages/uae_5.JPG" class="uae_5">
-    <img src="./imaages/flower1.png" class="flower1">
+
+<div class="circle__text">
+  <img src="./imaages/whoami.png" alt=""/>
 </div>
-</section>
-
+<main class="about-page-main">
+<div class="pic-wrapper">
+  <div class="all-pics">
+    <img src="./imaages/flower.png" alt="お花" class="flower">
+    <img src="./imaages/flower1.png" alt="お花" class="flower1">
+  </div>
+  <div class="circle-pic">
+    <img src="./imaages/profile.png" alt="" class="uae_5">
+  </div>
+</div>
+<div class="about-wrapper">
 <section class="abc">
     <div class="profile-box">
         <div class="profile-card">
-    <h2 class="title-profile">PROFILE</h2>
+    <h2>PROFILE</h2>
     <p class="profile-text">はじめまして、新人ウェブデザイナーの金城です。<br>
 <br>
  中学生の頃に訪れたバリ島をきっかけに海外が好きになり、<br>
@@ -70,8 +73,10 @@
 
 <section class="like">
     <div class="like-left">
-    <p>Likes & <br>
-Hobbies</p>
+    <p class="like-lefttop">Likes & <br>
+Hobbies<br>
+</p>
+<p class="like-leftbtm">好きなこと＆趣味</p>
   </div>
 
     <div class="like-box">
@@ -135,21 +140,18 @@ Hobbies</p>
             <span><button class="btn-middleeast">➜</button></span>
         </div>
     </div>
-
 </section>
 
 <div id="modal" class="modal">
   <div class="modal-content">
-    <span class="close"></span>
+    <button class="close-btn">×</button>
    <div id="modal-gallery" class="gallery"></div>
   </div>
 </div>
-
-
-
 <div class="half-bg"></div>
+</main>
 
-<section class="footer">
+<section class="about-footer">
 <div class="footer-name">
   <h1 class="footer-name1">MISAKI KANESHIRO</h1>
   <p class="footer-sub">WEB DESIGNER PORTFORIO SITE</p>
@@ -161,6 +163,8 @@ Hobbies</p>
   </a>
 </section>
 
-<script src="./script.js" defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
